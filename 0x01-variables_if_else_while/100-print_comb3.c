@@ -1,5 +1,6 @@
 #include <stdio.h>
 /**
+ * main - Begin here
  * Desc: Write a program that prints
  * all possible combinations of two
  * two-digit numbers.
