@@ -1,4 +1,4 @@
-#include "mike.h"
+#include "main.h"
 
 /**
  * print_last_digit - Start here

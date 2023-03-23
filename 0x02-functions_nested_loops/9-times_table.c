@@ -1,4 +1,4 @@
-#include "mike.h"
+#include "main.h"
 /**
  * times_table - Start here
  * Desc - Write a function that prints the 9
