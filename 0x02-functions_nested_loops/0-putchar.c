@@ -1,4 +1,4 @@
-#include "mike.h"
+#include "main.h"
 /**
  * main - Start here
  * Desc - Write a program that prints _putchar, followed by a new line.
