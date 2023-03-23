@@ -1,4 +1,4 @@
-#include "mike.h"
+#include "main.h"
 
 /**
  * main - check the code
