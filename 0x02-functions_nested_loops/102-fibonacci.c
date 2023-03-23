@@ -11,7 +11,7 @@ int main(void)
 {
 	unsigned long prev, next;
 	unsigned long temp;
-	int count = 0;
+	int count;
 
 	prev = 0;
 	next = 1;
@@ -21,12 +21,14 @@ int main(void)
 		{
 			temp = prev + next;
 			printf("%lu", temp);
-			if (count < 49)
+			if (count < 49){
 				printf(", ");
+			}
+			else
+				printf("\n");
 			prev = next;
 			next = temp;
 		}
-	printf("\n");
 	return (0);
 }
 
