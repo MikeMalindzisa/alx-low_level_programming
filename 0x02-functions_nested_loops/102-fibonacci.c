@@ -9,18 +9,18 @@
 
 int main(void)
 {
-	long int prev, next;
+	unsigned long prev, next;
 	int count = 0;
-	long int temp;
+	unsigned long temp;
 
 	prev = 1;
 	next = 2;
-	printf("%ld, ", prev);
-	printf("%ld, ", next);
+	printf("%lu, ", prev);
+	printf("%lu, ", next);
 		while (count <= 50)
 		{
 			temp = prev + next;
-			printf("%ld", temp);
+			printf("%lu", temp);
 			if (count != 50)
 				printf(", ");
 			prev = next;
