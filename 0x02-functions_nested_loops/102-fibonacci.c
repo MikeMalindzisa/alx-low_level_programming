@@ -10,7 +10,7 @@
 int main(void)
 {
 	long int prev, next;
-	long int count = 0;
+	int count = 0;
 	long int temp;
 
 	prev = 1;
