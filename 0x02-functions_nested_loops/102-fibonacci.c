@@ -11,12 +11,13 @@ int main(void)
 {
 	unsigned long prev, next;
 	unsigned long temp;
+	int count = 0;
 
 	prev = 1;
 	next = 2;
 	printf("%lu, ", prev);
 	printf("%lu, ", next);
-		for (int count = 0; count <= 50; count++)
+		for (count = 0; count <= 50; count++)
 		{
 			temp = prev + next;
 			printf("%lu", temp);
