@@ -1,4 +1,4 @@
-#include "mike.h"
+#include "main.h"
 /**
  * print_alphabet - Start here
  * Desc - Write a function that prints the alphabet, in lowercase,
