@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "mike.h"
+#include "main.h"
 /**
  * print_to_98 - Start here
  * Desc - Write a function that prints all natural
