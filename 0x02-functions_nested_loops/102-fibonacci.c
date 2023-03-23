@@ -10,14 +10,13 @@
 int main(void)
 {
 	unsigned long prev, next;
-	int count = 0;
 	unsigned long temp;
 
 	prev = 1;
 	next = 2;
 	printf("%lu, ", prev);
 	printf("%lu, ", next);
-		while (count <= 50)
+		for (int count = 0; count <= 50; count++)
 		{
 			temp = prev + next;
 			printf("%lu", temp);
@@ -25,7 +24,6 @@ int main(void)
 				printf(", ");
 			prev = next;
 			next = temp;
-			count++;
 		}
 	printf("\n");
 	return (0);
