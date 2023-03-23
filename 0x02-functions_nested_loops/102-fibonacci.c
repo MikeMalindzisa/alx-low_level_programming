@@ -9,9 +9,9 @@
 
 int main(void)
 {
-	long prev, next;
-	int count = 0;
-	int temp;
+	long int prev, next;
+	long int count = 0;
+	long int temp;
 
 	prev = 1;
 	next = 2;
