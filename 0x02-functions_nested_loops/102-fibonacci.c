@@ -13,15 +13,15 @@ int main(void)
 	unsigned long temp;
 	int count = 0;
 
-	prev = 1;
-	next = 2;
+	prev = 0;
+	next = 1;
 	printf("%lu, ", prev);
 	printf("%lu, ", next);
-		for (count = 0; count <= 50; count++)
+		for (count = 0; count < 50; count++)
 		{
 			temp = prev + next;
 			printf("%lu", temp);
-			if (count != 50)
+			if (count < 49)
 				printf(", ");
 			prev = next;
 			next = temp;
