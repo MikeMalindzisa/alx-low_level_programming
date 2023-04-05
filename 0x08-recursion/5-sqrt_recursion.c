@@ -1,25 +1,6 @@
 #include "main.h"
 
-/**
- * sqrt_fn - sqrt function
- * @a: int 
- * @b: int
- *
- * Return: sqrt
- */
-int sqrt_fn(int n, int result)
-{
-    if (result * result == n)
-    {
-        return (result);
-    }
-    else if (result * result > n)
-    {
-        return (-1);
-    }
-    else
-        return (sqrt_fn(n, result + 1));
-}
+int sqrt_fn(int n, int x);
 
 /**
  * _sqrt_recursion - Start here
@@ -30,8 +11,24 @@ int sqrt_fn(int n, int result)
  */
 int _sqrt_recursion(int n)
 {
-	if (n <= 0)
+	if (n < 0)
 		return (-1);
 	return (sqrt_fn(n, 0));
+}
+
+/**
+ * sqrt_fn - sqrt function
+ * @n: int
+ * @x: int
+ *
+ * Return: sqrt
+ */
+int sqrt_fn(int n, int x)
+{
+	if (x * x > n)
+		return (-1);
+	if (x * x == n)
+		return (x);
+	return (sqrt_fn(n, x + 1));
 }
 
