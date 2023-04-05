@@ -43,7 +43,8 @@ int palindrome(int index, int strLen, char *s)
 }
 /**
   * is_palindrome - Start here
-  * Desc - Write a function that returns 1 if a string is a palindrome and 0 if not.
+  * Desc - Write a function that returns 1
+  * if a string is a palindrome and 0 if not.
   * @s: input string
   * Return: return 1 if true else 0
 **/
