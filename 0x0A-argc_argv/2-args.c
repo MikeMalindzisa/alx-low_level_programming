@@ -3,8 +3,8 @@
  * main - Start here
  * Desc - Write a program that prints all arguments it receives
  * All arguments should be printed, including the first on
- * 
- * @argc: count 
+ *
+ * @argc: count
  * @argv: vector
  *
  * Return: 0
