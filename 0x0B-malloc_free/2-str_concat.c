@@ -10,7 +10,7 @@
  * @s2: second input
  *
  * Return: The returned pointer should point to x newly allocated space in
- *         memory which contains the contents of s1, followed by the contents 
+ *         memory which contains the contents of s1, followed by the contents
  *         of s2, and null terminated
  */
 
