@@ -4,7 +4,7 @@
 
 /**
  * **alloc_grid -Start here
- * Desc - Write a function that returns a 
+ * Desc - Write a function that returns a
  * pointer to a 2 dimensional array of integers.
  *
  * @width: width
