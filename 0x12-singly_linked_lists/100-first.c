@@ -1,24 +1,13 @@
 #include <stdio.h>
 /**
- * msg1 - prints the first msg using write
+ * before_main - prints message before main using fwrite
  */
-
-void message(void) {
-	char *message = "You're beat! and yet, you must allow,\nI bore my house upon my back!\n";
-	size_t len = 61;
-
-	write(STDOUT_FILENO, message, len);
-}
-
-/**
- * main - Start here
- *
- * Return: Always 0.
- */
-int main(void)
+void __attribute__((constructor)) before_main()
 {
-	message();
-	printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
-	return (0);
-}
+	char *part0 = "You're beat! and yet, you must allow,\n";
+	char *part1 = "I bore my house upon my back!\n";
+	size_t len_0 = 39, len_1 = 31;
 
+	fwrite(part0, sizeof(char), len_0, stdout);
+	fwrite(part1, sizeof(char), len_1, stdout);
+}
