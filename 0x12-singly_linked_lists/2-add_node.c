@@ -5,7 +5,7 @@
 /**
  * add_node - Start here
  * Desc - Adds a new node at the beginning of a list_t list.
- * @head: Pointer to first node
+ * @head_ref: Pointer to first node
  * @str: String to be duplicated and added to the list.
  *
  * Return: The address of the new element, or NULL if it failed.
