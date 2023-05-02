@@ -2,33 +2,31 @@
 
 /**
 * reverse_listint - Reverses a listint_t linked list.
-* @head: A double pointer to the head of the listint_t list.
+* @head: A pointer to the head of the listint_t list.
 *
 * Return: A pointer to the first node of the reversed list.
 *
-* Description: Reverses the given linked list in-place.
-*              Uses a two-pointer approach to reverse
-*              the list without using additional memory.
-*              Iteratively reverses the pointers of each
-*              node in the list until reaching the end.
-*              Updates the head pointer to the new head
-*              of the reversed list and returns it.
+* Description: Reverses the order of the nodes in a linked list
+*              of integers. The function returns a pointer to the
+*              new head of the reversed list.
+*              The implementation uses one loop and does not use
+*              malloc, free, or arrays. It declares a maximum of
+*              two variables.
 */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *current = *head;
-	listint_t *previous = NULL;
-	listint_t *next;
+	listint_t *prev = NULL;
+	listint_t *next = NULL;
 
-	while (current != NULL)
+	while (*head != NULL)
 	{
-		next = current->next;
-		current->next = previous;
-		previous = current;
-		current = next;
+		next = (*head)->next;
+		(*head)->next = prev;
+		prev = *head;
+		*head = next;
 	}
 
-	*head = previous;
+	*head = prev;
 	return (*head);
 }
 
