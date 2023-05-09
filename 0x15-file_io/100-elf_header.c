@@ -5,7 +5,7 @@
 #include <elf.h>
 
 /**
- * error - print error message to stderr and exit with status code 98
+ * error - print error message to stderr and exit with code 98
  * @msg: error message
  */
 void error(char *msg)
