@@ -32,6 +32,7 @@ typedef struct hash_table_s
 
 /* Function Prototypes */
 hash_table_t *hash_table_create(unsigned long int size);
+void print_malloc_error(void);
 
 #endif /* HASH_TABLES_H */
 
