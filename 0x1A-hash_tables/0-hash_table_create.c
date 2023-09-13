@@ -43,3 +43,4 @@ void initialize_array(hash_node_t **array, unsigned long int size)
 	for (index = 0; index < size; index++)
 		array[index] = NULL;
 }
+
