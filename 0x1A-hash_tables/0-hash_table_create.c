@@ -29,7 +29,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	initialize_array(new_table->array, size);
 
 	return (new_table);
-	}
+}
 
 /**
 * initialize_array - Initializes each index of a hash table array to NULL.
