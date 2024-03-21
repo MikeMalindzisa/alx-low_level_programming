@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a function to calculate the perimeter of an island."""
 
+
 def island_perimeter(grid):
     """Calculate the perimeter of an island.
 
@@ -24,6 +25,5 @@ def island_perimeter(grid):
                     perimeter -= 2
                 if j > 0 and grid[i][j - 1] == 1:
                     perimeter -= 2
-                    
-    return perimeter
 
+    return perimeter
